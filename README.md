@@ -22,16 +22,11 @@
 
 ```bash
 # install dependencies
-$ yarn
-
-# serve with hot reload
-$ yarn dev
+$ npm install
 
 # build for production and generate zip file
-$ yarn build
+$ npm run build
 
-# lint the TypeScript files with ESLint
-$ yarn lint
 ```
 
 ## 授權條款
