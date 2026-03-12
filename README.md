@@ -1,4 +1,4 @@
-# 巴哈自動簽到
+# 巴哈自動簽到 Firefox 版
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/brownsugar/baha-auto-sign?label=development&style=flat-square)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/nlcekebohjbgnfgjicklnjbnefmmgggk?label=chrome+web+store&style=flat-square)](https://brn.sg/BahaAutoSign)
