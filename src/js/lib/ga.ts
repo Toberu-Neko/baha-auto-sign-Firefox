@@ -1,25 +1,12 @@
-import MeasurementProtocol from '@os-team/measurement-protocol'
-import type { Event } from '@os-team/measurement-protocol'
 import { getConfig } from './config'
 import { setStorageData } from './storage'
 
-const getClientId = async () => {
-  const { clientId } = await getConfig()
-  if (clientId)
-    return clientId
-  const newClientId = crypto.randomUUID()
-  await setStorageData({
-    clientId: newClientId,
-  })
-  return newClientId
+type Event = {
+
 }
 
-const tracker = new MeasurementProtocol({
-  measurementId: '',
-  apiSecret: '',
-})
-
 const sendEvents = async (events: Event[]) => {
+  // 直接回傳，不執行任何動作
   return Promise.resolve();
 }
 
@@ -45,4 +32,4 @@ const event = async (category, action, label) =>
 
 event('extension', 'language', chrome.i18n.getUILanguage())
 
-export { tracker, pageView, event }
+export { pageView, event }
