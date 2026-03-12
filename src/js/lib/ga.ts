@@ -15,16 +15,13 @@ const getClientId = async () => {
 }
 
 const tracker = new MeasurementProtocol({
-  measurementId: 'G-NX79VZYHXW',
-  apiSecret: 'rmdsr5hJRziNCWcQbrvTuw',
+  measurementId: '',
+  apiSecret: '',
 })
 
-const sendEvents = async (events: Event[]) =>
-  await tracker.send({
-    client_id: await getClientId(),
-    non_personalized_ads: true,
-    events,
-  })
+const sendEvents = async (events: Event[]) => {
+  return Promise.resolve();
+}
 
 const pageView = async () =>
   await sendEvents([
