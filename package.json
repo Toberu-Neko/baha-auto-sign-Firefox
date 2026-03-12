@@ -4,7 +4,7 @@
   "description": "Daily sign in 94 EZ.",
   "scripts": {
     "dev": "webpack --env development --watch --config config/webpack.config.ts",
-    "build": "yarn build:ext && yarn build:zip",
+    "build": "npm run build:ext && npm run build:zip",
     "build:ext": "webpack --env production --config config/webpack.config.ts",
     "build:zip": "ts-node scripts/build-zip.ts",
     "lint": "eslint . --fix",
@@ -26,7 +26,7 @@
     "@types/adm-zip": "^0.5.6",
     "@types/chrome": "^0.0.283",
     "adm-zip": "^0.5.16",
-    "copy-webpack-plugin": "^12.0.2",
+    "copy-webpack-plugin": "^14.0.0",
     "css-loader": "^7.1.2",
     "eslint": "^9.14.0",
     "mini-css-extract-plugin": "^2.9.2",
